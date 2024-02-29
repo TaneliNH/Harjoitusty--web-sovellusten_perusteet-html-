@@ -1,0 +1,375 @@
+
+:root {
+    --dark-background-color: #cdeef2;
+    --light-background-color: #c9deea;
+    --general-color: #0a466b;
+    --general-padding: 2rem;
+    --general-margin: 1em;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+a:hover {
+    font-weight:bolder;
+}
+
+#logo {
+    width: 20%;
+}
+
+.logobar {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.logobar h2 {
+    color: var(--general-color);
+    font-style:oblique
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+}
+
+.container h1 {
+    text-align: center;
+    margin: 3em;
+}
+
+.navbar {
+    height: 150px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--dark-background-color);
+    padding-bottom: 0.5em;
+}
+
+.navbar a {
+    background-color: var(--dark-background-color);
+    text-align: center;
+    text-decoration: none;
+    color: var(--general-color);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-right: 1em;
+}
+
+.menu #home, #info,#sports,#contact{
+    font-size: x-large;
+    width: 25%;
+}
+
+div#sportpics {
+    display: flex;
+    width: 100vw;
+}
+
+div#sportpics img {
+    max-width: 25%;
+    object-fit: cover;
+    width: 100vw;
+    min-width: 100px;
+}
+
+#tausta1 {
+    width: 100%;
+    opacity: 40%;
+    position: absolute;
+}
+
+.main_page_text {
+    margin-bottom: 3em;
+    min-height: 60vh;
+}
+
+.main_page_text p{
+    font-style: italic;
+    font-size: x-large;
+    text-align: center;
+    margin: 2em 3em;
+}
+
+.main_page_text span {
+    font-size: x-small;
+    font-style: oblique;
+}
+
+.footer {
+    height: 100px;
+    width: 100vw;
+    bottom: 0;
+    background-color: var(--general-color);
+    flex-direction: column;
+}
+
+.footer_text {
+    margin-top: 2em;
+    width: 100%;
+    background-color: var(--general-color);
+    justify-content: center;
+    text-align: center;
+}
+
+.footer h4 {
+    font-weight: 600;
+    color: var(--dark-background-color);
+}
+
+.footer_logos {
+    width:100%;
+    text-align: center;
+}
+
+.footer_logos i {
+    color: var(--dark-background-color);
+    margin-left: 1em;
+    padding: 1em;
+    align-items: center;
+}
+
+.content {
+    position: relative;
+    width: 100vw;
+    min-height: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+
+/*--- Meistä---*/
+
+#background1, #background2 {
+    margin: var(--general-margin);
+    padding: var(--general-padding);
+    width: 20%;
+    height: auto;
+    flex-direction: row;
+    opacity: 50%;
+}
+
+.infotext {
+    margin: auto;
+}
+
+.infotext h5 {
+    text-align: center;
+    font-size: xx-large;
+    margin-bottom: 2em;
+}
+
+.infotext p {
+    text-align: center;
+    margin: 0 2em 2em;
+}
+
+#p_to_bold {
+    font-weight: bold;
+}
+
+
+
+
+/*---Ota yhteyttä---*/
+
+.location {
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.location iframe {
+    width: 100%;
+}
+
+.contact_us {
+    width: 100%;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.contact_col div {
+    display: flex;
+}
+
+
+
+/*---Lajit---*/
+
+.videos {
+    min-height: 60vh;
+    text-align: center;
+    margin: 3em 2em;
+}
+
+.videos h3 {
+    padding: 1em;
+}
+
+.gym_section {
+    padding: 2em;
+}
+
+.running_section {
+    padding: 2em;
+}
+
+.swimming_section {
+    padding: 2em;
+}
+
+.tennis_section {
+    padding: 2em;
+}
+
+
+/*---Matopeli---*/
+
+#game_canvas {
+    border: 3px solid;
+}
+
+.game {
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.game h2 {
+    padding: 1em;
+}
+
+.game p {
+    margin-bottom: 1em;
+}
+
+.score {
+    font-size: 60px;
+}
+
+#reset_button {
+    width: 100px;
+    height: 50px;
+    border: 3px solid;
+    border-radius: 15px;
+    cursor: grabbing;
+}
+
+#ohjeet {
+    font-weight: bold;
+}
+
+
+
+/*---Responsiivisuus---*/
+
+@media screen and (max-width: 1200px) {
+    div#sportpics {
+        width: 100vw;
+    }
+    .navbar {
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .menu #home,#info,#sports,#contact{
+        font-size: larger;
+    }
+    .content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }     
+}
+
+@media screen and (max-width: 850px) {
+    .container h2 {
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .container h2 {
+        font-size: medium;
+    }
+    .navbar {
+        padding: 1em 0;
+    }
+    .logobar {
+        margin-right: 1em;
+    }
+    .menu {
+        margin-right: 1em;
+    }
+    .menu #home,#info,#sports,#contact {
+        font-size: medium;
+    }
+    div#sportpics {
+        object-fit: fill;
+        min-width: 10px;
+        width: 100vw;
+    }
+    .main_page_text h1 {
+        font-size: 30px;
+    }
+    .main_page_text p{
+        font-style: italic;
+        font-size: large;
+    }
+    .main_page_text span {
+        font-size: x-small;
+        font-style: oblique;
+    }
+    .infotext h5 {
+        font-size: 20px;
+        margin-top: 2em;
+    }
+    .infotext p {
+        font-size: 15px;
+    }
+    .navbar {
+        width: 100vw;
+    }
+    #background1,#background2 {
+        object-fit:scale-down;
+    }
+    .videos {
+        width:80%;
+    }
+    .videos iframe {
+        width: 80%;
+    }
+    .videos h1 {
+        font-size: x-large;
+    }
+    .footer {
+        width: 100vw;
+    }
+    #game_canvas {
+       width: 70%;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .container h2 {
+        font-size: smaller;
+    }
+}

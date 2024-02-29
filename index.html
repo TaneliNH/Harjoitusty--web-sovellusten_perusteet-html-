@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>#uusiaharrastuksia</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logobar">
+                <img src="./img/kuntoiluLogo.webp" id="logo">
+                <h2>#uusiaharrastuksia</h2>
+            </div>
+            <div class="menu">
+                <a id="home" href="index.html">Etusivu</a>
+                <a id="info" href="meista.html">Meistä</a>
+                <a id="sports" href="lajit.html">Lajit</a>
+                <a id="contact" href="yhteystiedot.html">Yhteystiedot</a>
+            </div>
+        </div>
+        <div>
+            <div id="sportpics">
+                <img src="./img/kuntosali.jpg" alt="kuntosali">
+                <img src="./img/juoksu.jpg" alt="juoksu">
+                <img src="./img/uinti.jpg" alt="uinti">
+                <img src="./img/tennis.jpg" alt="tennis">
+            </div>
+        </div>
+        <div class="main_page_text">
+            <h1>Tervetuloa uusien harrastusten pariin!</h1>
+            <p>"Urheilu on askelpuu elämään, ja jokainen tervevaistoinen nuorukainen käy sitä myöten täyttä
+                voimaansa ja tulevaisuuttaan kohti."
+                <span>Martti Jukola</span>
+            </p>
+            <p>
+                "Oliva huanost harjotelle ku noi kaatusiva."
+                <span>Paavo nurmi</span>
+            </p>
+            <p>
+                "Urheilu on muuttunut ammattimaiseksi."
+                <span>Sokrates</span>
+            </p>
+        </div>
+    </div>
+    <div class="game">
+        <h2>Etkö ole kiinnostunut urheilusta?</h2>
+        <p>Jotta et tullut sivullemme turhaan, kokeile kuinka pärjäät matopelissämme!</p>
+        <p id="ohjeet">Ohjaa matoa näppäimillä W=ylös, A=vasen, S=alas ja D=oikea</p>
+        <canvas id="game_canvas" width="600" height="600"></canvas>
+        <div class="score">0</div>
+        <button id="reset_button">Reset</button>
+    </div>
+    <footer class="footer">
+        <div class="footer_text">
+            <h4>Löydä meidät somesta #uusiaharrastuksia!</h4>
+        </div>
+        <div class="footer_logos">
+            <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+        </div>
+    </footer>
+    <script type="module" src="./js/functions.js"></script>
+</body>
+
+</html>
